@@ -11,9 +11,9 @@ public:
         while (i < word1.size()) {
             result.push_back(word1[i++]);
         }
-        while (j < word2.size()) {
-            result.push_back(word2[j++]);
-        }
+       while ( j< word2.size()){
+        result.push_back(word2[j++]);
+       }
         return result;
     }
 };
