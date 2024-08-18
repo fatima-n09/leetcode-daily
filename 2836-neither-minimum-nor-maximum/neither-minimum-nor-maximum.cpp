@@ -12,8 +12,7 @@ public:
 
 private:
     void insertionSort(vector<int>& nums) {
-        int n = nums.size();
-        for (int i = 1; i < n; ++i) {
+        for (int i = 1; i < nums.size(); ++i) {
             int temp = nums[i];
             int j;
             for (j = i; j > 0 && nums[j - 1] > temp; --j) {
