@@ -3,7 +3,7 @@ public:
     int subarraySum(vector<int>& nums, int k)
     {
         int n = nums.size();
-        double ans = 0;
+        int ans = 0;
         for( int  i =0; i < n; i++)
         {
             int sum = nums[i];
