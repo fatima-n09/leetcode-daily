@@ -8,7 +8,7 @@ public:
         while (l <= r) {
             if (nums[l] < nums[r]) {
                 res = min(res, nums[l]);
-                break;
+            
             }
             int mid = l + (r - l) / 2;
             res = min(res, nums[mid]);
