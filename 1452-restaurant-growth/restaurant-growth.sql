@@ -21,4 +21,5 @@ WHERE visited_on >= (
         SELECT DATE_ADD(MIN(visited_on), INTERVAL 6 DAY)
         FROM customer
     )
-GROUP BY visited_on;
+GROUP BY visited_on
+ORDER BY visited_on
