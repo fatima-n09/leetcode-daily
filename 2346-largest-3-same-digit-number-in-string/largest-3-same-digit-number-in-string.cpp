@@ -1,8 +1,8 @@
 class Solution {
 public:
     string largestGoodInteger(string nums) {
-        string results;
         int n=nums.size();
+        string results;
         if(n<3){
             return results;
         }
