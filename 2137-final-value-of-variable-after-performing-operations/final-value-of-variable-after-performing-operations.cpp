@@ -1,19 +1,12 @@
 class Solution {
 public:
-    int finalValueAfterOperations(vector<string>& operations) 
-    {
-        int result = 0;
-        for(const string& operation : operations)
-        {
-            if( operation == "++X" || operation == "X++")
-            {
-                ++result;
-            }
-             if( operation == "--X" || operation == "X--")
-            {
-                --result;
-            }
-        }
-        return result;
+    int finalValueAfterOperations(vector<string>& operations){
+        int x = 0;
+        for (const string& op : operations){
+            if (op[0] == '+' || op[2] == '+')
+                x++;
+            else
+                x--;
+        }return x;
     }
 };
